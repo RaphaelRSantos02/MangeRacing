@@ -1,21 +1,40 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+<script lang="ts">
+import { defineComponent } from "vue";
+import { useAuthStore } from "./store/useAuthStore";
+import { useRouter } from "vue-router";
 
+export default defineComponent({
+  name: "App",
+  setup() {
+    const router = useRouter();
+    const authStore = useAuthStore();
+
+    const logout = () => {
+      authStore.logout();
+      router.push({ name: "Login" });
+    };
+
+    return {
+      authStore,
+      logout,
+    };
+  },
+});
 </script>
 
 <template>
-  <header>
-    <div>
+  <div>
+    <header v-if="authStore.isAuthenticated">
       <nav>
-        <RouterLink to="/home">Home</RouterLink>
+        <router-link to="/home">Home</router-link>
+        <button @click="logout">Logout</button>
       </nav>
-    </div>
-  </header>
-
-  <RouterView />
+    </header>
+    <router-view />
+  </div>
 </template>
 
-<style scoped>
 
+<style scoped>
 
 </style>
