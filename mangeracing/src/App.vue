@@ -35,6 +35,6 @@ export default defineComponent({
 </template>
 
 
-<style scoped>
+<style lang="scss">
 
 </style>

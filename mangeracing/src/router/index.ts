@@ -14,21 +14,19 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/login',
       name: 'login',
       component: Login,
     },
     {
-      path: '/home',
+      path: '/',
       name: 'home',
       component: Home,
-      meta: { requiresAuth: true },
     },
     {
       path: '/sponsor',
       name: 'sponsor',
       component: Sponsor,
-      meta: { requiresAuth: true },
     },
     {
       path: '/cart',
@@ -40,7 +38,6 @@ const router = createRouter({
       path: '/build',
       name: 'build',
       component: Build,
-      meta: { requiresAuth: true },
     },
     {
       path: '/ghostrider',

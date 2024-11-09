@@ -18,7 +18,7 @@ export default defineComponent({
 
       if (email.value === validEmail && password.value === validPassword) {
         authStore.login(); 
-        router.push("/home");
+        router.push("/");
       } else {
         errorMessage.value = "Email ou senha incorretos.";
       }
