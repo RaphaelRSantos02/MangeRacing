@@ -7,6 +7,7 @@ import Build from '../views/build/build.vue'
 import Ghost from '../views/build/GhostRider.vue'
 import Speed from '../views/build/Speedester.vue'
 import City from '../views/build/City.vue'
+import NotFound from '../views/NotFound.vue'
 import { useAuthStore } from "../store/useAuthStore"
 
 
@@ -40,22 +41,27 @@ const router = createRouter({
       component: Build,
     },
     {
-      path: '/ghostrider',
+      path: '/build/ghostrider',
       name: 'ghost',
       component: Ghost,
       meta: { requiresAuth: true },
     },
     {
-      path: '/Speedester',
+      path: '/build/Speedester',
       name: 'Speed',
       component: Speed,
       meta: { requiresAuth: true },
     },
     {
-      path: '/city',
+      path: '/build/city',
       name: 'city',
       component: City,
       meta: { requiresAuth: true },
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'not-found',
+      component: NotFound
     },
     
   ],
