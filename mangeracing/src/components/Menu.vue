@@ -7,7 +7,7 @@ const router = useRouter();
 
 function handleLogout() {
   authStore.logout();
-  router.push({ name: "login" });
+  router.push({ path: '/login' });
 }
 </script>
 
@@ -17,7 +17,7 @@ function handleLogout() {
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/build">Garagem</RouterLink>
       <RouterLink to="/sponsor">Patrocinador</RouterLink>
-      <RouterLink v-if="authStore.isAuthenticated" to="/cart">Icone carrinho</RouterLink>
+      <RouterLink to="/cart">Icone carrinho</RouterLink>
     </nav>
     <div>
       <button v-if="authStore.isAuthenticated" @click="handleLogout" class="auth-button">
@@ -40,11 +40,11 @@ function handleLogout() {
   left: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   nav {
     display: flex;
     gap: 40px;
+
     a {
       text-decoration: none;
       color: inherit;
@@ -60,7 +60,7 @@ function handleLogout() {
     border-radius: 14px;
     padding: 8px 16px;
     cursor: pointer;
-    transition: background-color 1000ms;
+    transition: background-color 1s;
 
     &:hover {
       background-color: #848181;
