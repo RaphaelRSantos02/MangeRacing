@@ -4,6 +4,21 @@
 
 <template>
   <main>
-    Mange Race
+    <div class="home-container">
+      Mange Race
+      <div>
+        
+      </div>
+    </div>
   </main>
 </template>
+
+<style lang="scss">
+
+.home-container{
+  color: white;
+
+}
+  
+
+</style>
