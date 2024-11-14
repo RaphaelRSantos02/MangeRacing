@@ -1,4 +1,4 @@
-import { Part } from "./motoPart";
+import { Part } from "./MotoPart";
 
 export const calcTotalCost = (item:ItemCart) =>{
     return item.front.cost +

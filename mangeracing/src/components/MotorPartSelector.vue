@@ -4,7 +4,7 @@ import { type Ref, ref } from 'vue';
 
 type PropType = {
     parts: Array<Part>;
-    position: "left"|"right"|"center"|"top"|"bottom"
+    position: "left"|"right"|"center"|"top"
 }
 
 const props = defineProps<PropType>();
@@ -48,7 +48,7 @@ $part-height: 165px;
     position: relative;
     width: $part-width;
     height: $part-height;
-    border: 3px solid white;
+    margin-top: 5%;
 
     img{
         width: calc($part-width - 1px);
@@ -77,9 +77,7 @@ $part-height: 165px;
 
 .left{
     border-right: none;
-    img{
-        transform: rotate(-90deg);
-    }
+    margin-left: 8%;
 
     .next-selector{
         top: auto;
@@ -98,9 +96,7 @@ $part-height: 165px;
 
 .right{
     border-left: none;
-    img{
-        transform: rotate(90deg);
-    }
+    margin-right: 8%;
 
     .next-selector{
         top: auto;
@@ -115,10 +111,6 @@ $part-height: 165px;
         width: 144px;
         height: 25px;
     }
-}
-
-.bottom{
-    border-top: none;
 }
 
 .center{

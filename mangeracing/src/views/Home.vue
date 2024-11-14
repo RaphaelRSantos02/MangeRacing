@@ -13,7 +13,7 @@
   </main>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 
 .home-container{
   color: white;
