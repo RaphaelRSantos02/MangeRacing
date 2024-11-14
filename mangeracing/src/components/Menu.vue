@@ -14,7 +14,7 @@ function handleLogout() {
 <template>
   <header class="menu flex justify-content-between align-items-center p-3">
     <nav class="flex gap-3">
-      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/">Inicio</RouterLink>
       <RouterLink to="/build">Garagem</RouterLink>
       <RouterLink to="/sponsor">Patrocinador</RouterLink>
       <RouterLink to="/cart">Icone carrinho</RouterLink>
