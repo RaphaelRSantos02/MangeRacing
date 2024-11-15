@@ -63,18 +63,11 @@ const cartStore = useCart();
 
     tbody {
       tr {
-        &:nth-child(even) {
-          background-color: #f2f2f2;
-        }
-
         td {
           padding: 10px;
           text-align: center;
           border: 1px solid #ddd;
-
-          &.head-0, &.torso-0, &.base-0, &.left-0, &.right-0 {
-            color: #999;
-          }
+          color: rgb(255, 255, 255);
         }
 
         button {

@@ -14,10 +14,11 @@ function handleLogout() {
 <template>
   <header class="menu flex justify-content-between align-items-center p-3">
     <nav class="flex gap-3">
+      <img src="../assets/image/logo.png" class="logo">
       <RouterLink to="/">Inicio</RouterLink>
-      <RouterLink to="/build">Garagem</RouterLink>
+      <RouterLink to="/build">Montagem</RouterLink>
       <RouterLink to="/sponsor">Patrocinador</RouterLink>
-      <RouterLink to="/cart">Icone carrinho</RouterLink>
+      <RouterLink to="/cart">carrinho</RouterLink>
     </nav>
     <div>
       <button v-if="authStore.isAuthenticated" @click="handleLogout" class="auth-button">
@@ -41,6 +42,9 @@ function handleLogout() {
   width: 100%;
   z-index: 1000;
 
+  .logo{
+    width: 60px;
+  }
   nav {
     display: flex;
     gap: 40px;

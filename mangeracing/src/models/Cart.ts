@@ -13,7 +13,7 @@ export class ItemCart {
     frontWheel: Part = new Part();
     engine: Part = new Part();
     BackWheel: Part = new Part();
-    cost: number = 0.0;
+    cost: number = 0;
 
     constructor(){
         this.updateCost();

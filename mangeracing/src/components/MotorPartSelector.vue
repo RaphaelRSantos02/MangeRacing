@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Part } from '@/models/motoPart';
+import { Part } from '@/models/MotoPart';
 import { type Ref, ref } from 'vue';
 
 type PropType = {
@@ -8,11 +8,10 @@ type PropType = {
 }
 
 const props = defineProps<PropType>();
-
-const model = defineModel<Part>();
-model.value = new Part();
-
+const model = defineModel<Part|null>();
 const selectedIndex = ref(0);
+
+model.value = new Part();
 
 const changePart = (isNext: boolean)=>{
 

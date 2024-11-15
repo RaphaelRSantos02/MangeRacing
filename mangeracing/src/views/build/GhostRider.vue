@@ -7,27 +7,26 @@ import { useCart } from '@/store/Cart';
 
 const availableParts = {
   front: [
-    new Part({ id: 1, src: "/src/assets/image/front/ghost/front1.png", cost: 100 }),
-    new Part({ id: 2, src: "/src/assets/image/front/ghost/front2.png", cost: 120 }),
-    new Part({ id: 3,src: "/src/assets/image/front/ghost/front3.png", cost: 240 }),
+    new Part({ id: 0, src: "/src/assets/image/front/ghost/front1.png", cost: 100 }),
+    new Part({ id: 1, src: "/src/assets/image/front/ghost/front2.png", cost: 120 }),
+    new Part({ id: 2,src: "/src/assets/image/front/ghost/front3.png", cost: 240 }),
 
   ],
   frontWheel: [
-    new Part({ id: 4, src: "/src/assets/image/frontWheel/ghost/frontWheel1.png", cost: 50 }),
-    new Part({ id: 5, src: "/src/assets/image/frontWheel/ghost/frontWheel2.png", cost: 70 }),
-    new Part({ id: 6,src: "/src/assets/image/frontWheel/ghost/frontWheel3.png", cost: 90 }),
+    new Part({ id: 0, src: "/src/assets/image/frontWheel/ghost/frontWheel1.png", cost: 50 }),
+    new Part({ id: 1, src: "/src/assets/image/frontWheel/ghost/frontWheel2.png", cost: 70 }),
+    new Part({ id: 2,src: "/src/assets/image/frontWheel/ghost/frontWheel3.png", cost: 90 }),
 
   ],
   engine: [
-    new Part({ id: 7, src: "/src/assets/image/engine/ghost/engine1.png", cost: 200 }),
-    new Part({ id: 8,src: "/src/assets/image/engine/ghost/engine2.png", cost: 220 }),
-    new Part({ id: 9,src: "/src/assets/image/engine/ghost/engine3.png", cost: 210 }),
+    new Part({ id: 0, src: "/src/assets/image/engine/ghost/engine1.png", cost: 200 }),
+    new Part({ id: 1,src: "/src/assets/image/engine/ghost/engine2.png", cost: 220 }),
+    new Part({ id: 2,src: "/src/assets/image/engine/ghost/engine3.png", cost: 210 }),
   ],
   backWheel: [
-    new Part({ id: 10, src: "/src/assets/image/rearWheel/ghost/backWheel1.png", cost: 60 }),
-    new Part({ id: 11, src: "/src/assets/image/rearWheel/ghost/backWheel2.png", cost: 80 }),
-    new Part({ id: 912, src: "/src/assets/image/rearWheel/ghost/backWheel3.png", cost: 70 }),
-
+    new Part({ id: 0, src: "/src/assets/image/rearWheel/ghost/backWheel1.png", cost: 60 }),
+    new Part({ id: 1, src: "/src/assets/image/rearWheel/ghost/backWheel2.png", cost: 80 }),
+    new Part({ id: 2, src: "/src/assets/image/rearWheel/ghost/backWheel3.png", cost: 70 }),
   ],
 };
 

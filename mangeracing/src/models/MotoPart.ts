@@ -6,7 +6,7 @@ export enum PartTypes {
     id: number = 0;
     src: string = "";
     type: PartTypes = PartTypes.front;
-    cost: number = 0.0;
+    cost: number = 0;
 
     constructor(init?: Partial<Part>) {
       Object.assign(this, init);
