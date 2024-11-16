@@ -12,19 +12,19 @@ const cartStore = useCart();
       <thead>
         <th>Item</th>
         <th>Front</th>
-        <th>Front Wheel</th>
         <th>Engine</th>
         <th>Back Wheel</th>
+        <th>Front Wheel</th>
         <th>Custo</th>
         <th>Ação</th>
       </thead>
       <tbody>
         <tr v-for="(moto, index) in cartStore.moto" :key="index">
-          <td>{{ index }}</td>
-          <td :class="`front-${moto.front.id}`">{{ moto.front.id }}</td>
-          <td :class="`front-wheel-${moto.frontWheel.id}`">{{ moto.frontWheel.id }}</td>
-          <td :class="`engine-${moto.engine.id}`">{{ moto.engine.id }}</td>
-          <td :class="`back-wheel-${moto.BackWheel.id}`">{{ moto.BackWheel.id }}</td>
+          <td>{{ index + 1 }}</td>
+          <td :class="`front-${moto.front.id}`"><img :src= moto.front.src></td>
+          <td :class="`engine-${moto.engine.id}`"><img :src= moto.engine.src></td>
+          <td :class="`back-wheel-${moto.BackWheel.id}`"><img :src= moto.BackWheel.src></td>
+          <td :class="`front-wheel-${moto.frontWheel.id}`"><img :src= moto.frontWheel.src></td>
           <td>R${{ moto.cost }}</td>
           <td><button @click="cartStore.removeCart(index)">
             Excluir
@@ -44,6 +44,11 @@ const cartStore = useCart();
   h1 {
     text-align: center;
     margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 50px;
+    max-height: 50px;
   }
 
   table {

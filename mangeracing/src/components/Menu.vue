@@ -17,15 +17,14 @@ function handleLogout() {
       <img src="../assets/image/logo.png" class="logo">
       <RouterLink to="/">Inicio</RouterLink>
       <RouterLink to="/build">Montagem</RouterLink>
-      <RouterLink to="/sponsor">Patrocinador</RouterLink>
       <RouterLink to="/cart">carrinho</RouterLink>
     </nav>
     <div>
-      <button v-if="authStore.isAuthenticated" @click="handleLogout" class="auth-button">
+      <button id="login-buttom" v-if="authStore.isAuthenticated" @click="handleLogout" class="auth-button">
         Logout
       </button>
       <RouterLink v-else to="/login">
-        <button class="auth-button">Login</button>
+        <button  id="login-buttom" class="auth-button">Login</button>
       </RouterLink>
     </div>
   </header>

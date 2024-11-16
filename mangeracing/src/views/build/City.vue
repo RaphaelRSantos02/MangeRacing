@@ -2,7 +2,7 @@
 import MotorPartSelector from '@/components/MotorPartSelector.vue';
 import { reactive } from 'vue';
 import { Part, PartsResponse } from '@/models/MotoPart';
-import { ItemCart } from '@/models/cart';
+import { ItemCart } from '@/models/Cart';
 import { useCart } from '@/store/Cart';
 
 const availableParts = {
@@ -53,7 +53,7 @@ const addCart = () => {
     </section>
 
     <div class="flex flex-row align-items-center justify-content-center">
-      <button @click="addCart" class="mt-4 dark-button p-3">
+      <button id="add-cart" @click="addCart" class="mt-4 dark-button p-3">
         Adicionar ao Carrinho
       </button>
     </div>
