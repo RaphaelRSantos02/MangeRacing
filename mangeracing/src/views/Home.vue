@@ -17,7 +17,7 @@ const Build = ()=> router.push('/build');
           oportunidade de criar uma moto verdadeiramente única e ideal.<br>
           Combinamos inovação e personalização para proporcionar uma experiência incomparável, onde cada detalhe reflete a visão e o estilo do cliente.
         </p>
-        <button id="models-buttom" class="home-button" @click='Build'>Explore Modelos</button>
+        <button id="models-buttom" class="home-button" @click='Build'>Explore os modelos</button>
       </div>
     </div>
   </main>
