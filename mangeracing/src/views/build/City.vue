@@ -5,30 +5,43 @@ import { Part, PartsResponse } from '@/models/MotoPart';
 import { ItemCart } from '@/models/Cart';
 import { useCart } from '@/store/Cart';
 
+import front1 from '@/assets/image/front/city/front1.png';
+import front2 from '@/assets/image/front/city/front2.png';
+import front3 from '@/assets/image/front/city/front3.png';
+
+import frontWheel1 from '@/assets/image/frontWheel/city/frontWheel1.png';
+import frontWheel2 from '@/assets/image/frontWheel/city/frontWheel2.png';
+import frontWheel3 from '@/assets/image/frontWheel/city/frontWheel3.png';
+
+import engine1 from '@/assets/image/engine/city/engine1.png';
+import engine2 from '@/assets/image/engine/city/engine2.png';
+import engine3 from '@/assets/image/engine/city/engine3.png';
+
+import backWheel1 from '@/assets/image/rearWheel/city/backWheel1.png';
+import backWheel2 from '@/assets/image/rearWheel/city/backWheel2.png';
+import backWheel3 from '@/assets/image/rearWheel/city/backWheel3.png';
+
 
 const availableParts = {
   front: [
-    new Part({ id: 0, src: "@/assets/image/front/city/front1.png", cost: 100 }),
-    new Part({ id: 1, src: "@/assets/image/front/city/front2.png", cost: 120 }),
-    new Part({ id: 2,src: "@/assets/image/front/city/front3.png", cost: 240 }),
-
+    new Part({ id: 0, src: front1, cost: 100 }),
+    new Part({ id: 1, src: front2, cost: 120 }),
+    new Part({ id: 2, src: front3, cost: 240 }),
   ],
   frontWheel: [
-    new Part({ id: 0, src: "@/assets/image/frontWheel/city/frontWheel1.png", cost: 50 }),
-    new Part({ id: 1, src: "@/assets/image/frontWheel/city/frontWheel2.png", cost: 70 }),
-    new Part({ id: 2,src: "@/assets/image/frontWheel/city/frontWheel3.png", cost: 90 }),
-
+    new Part({ id: 0, src: frontWheel1, cost: 50 }),
+    new Part({ id: 1, src: frontWheel2, cost: 70 }),
+    new Part({ id: 2, src: frontWheel3, cost: 90 }),
   ],
   engine: [
-    new Part({ id: 0, src: "@/assets/image/engine/city/engine1.png", cost: 200 }),
-    new Part({ id: 1,src: "@/assets/image/engine/city/engine2.png", cost: 220 }),
-    new Part({ id: 2,src: "@/assets/image/engine/city/engine3.png", cost: 210 }),
+    new Part({ id: 0, src: engine1, cost: 200 }),
+    new Part({ id: 1, src: engine2, cost: 220 }),
+    new Part({ id: 2, src: engine3, cost: 210 }),
   ],
   backWheel: [
-    new Part({ id: 0, src: "@/assets/image/rearWheel/city/backWheel1.png", cost: 60 }),
-    new Part({ id: 1, src: "@/assets/image/rearWheel/city/backWheel2.png", cost: 80 }),
-    new Part({ id: 2, src: "@/assets/image/rearWheel/city/backWheel3.png", cost: 70 }),
-
+    new Part({ id: 0, src: backWheel1, cost: 60 }),
+    new Part({ id: 1, src: backWheel2, cost: 80 }),
+    new Part({ id: 2, src: backWheel3, cost: 70 }),
   ],
 };
 
