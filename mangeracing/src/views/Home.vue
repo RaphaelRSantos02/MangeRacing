@@ -16,6 +16,9 @@ const Build = ()=> router.push('/build');
           Nossa startup, impulsionada pela constante evolução da tecnologia, oferece a cada cliente a 
           oportunidade de criar uma moto verdadeiramente única e ideal.<br>
           Combinamos inovação e personalização para proporcionar uma experiência incomparável, onde cada detalhe reflete a visão e o estilo do cliente.
+
+          Login:admin
+          senha:admin
         </p>
         <button id="models-buttom" class="home-button" @click='Build'>Explore os modelos</button>
       </div>
