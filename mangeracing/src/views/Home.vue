@@ -18,8 +18,8 @@ const Build = ()=> router.push('/build');
           Combinamos inovação e personalização para proporcionar uma experiência incomparável, onde cada detalhe reflete a visão e o estilo do cliente.
           <br>
           <br>
-          Login:admin
-          senha:admin
+          Login: admin
+          senha: admin
         </p>
         <button id="models-buttom" class="home-button" @click='Build'>Explore os modelos</button>
       </div>
